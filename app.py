@@ -86,7 +86,7 @@ sns.set_style("whitegrid")
 @st.cache_data
 def load_data():
     base = Path(__file__).resolve().parent.parent
-    return pd.read_csv(base / "dataset" / "cleaned_house_prices.csv")
+    return pd.read_csv("cleaned_house_prices.csv")
 
 
 df = load_data()
